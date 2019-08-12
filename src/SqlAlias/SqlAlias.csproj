@@ -6,7 +6,7 @@
     <RootNamespace>SqlAlias</RootNamespace>
     <PackageId>SqlAlias</PackageId>
     <Description>SqlAlias applies alias definitions from the registry to the server portion of a Microsoft SQL Server connection string</Description>
-    <Authors>droyad</Authors>
+    <Authors>droyad,tgunness</Authors>
     <PackageProjectUrl>https://github.com/droyad/SqlAlias</PackageProjectUrl>
     <RepositoryUrl>https://github.com/droyad/SqlAlias</RepositoryUrl>
   </PropertyGroup>
