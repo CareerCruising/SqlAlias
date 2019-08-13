@@ -1,8 +1,6 @@
 using System;
-#if !NET40
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-#endif
 
 namespace SqlAlias
 {
@@ -10,10 +8,6 @@ namespace SqlAlias
     {
         public static string Map(string connectionString)
         {
-#if NET40
-            return connectionString;
-#else
-
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) &&
                 RuntimeInformation.FrameworkDescription.StartsWith(".NET Core")) // netstandard library may be used from NetFX runtime
             {
@@ -39,7 +33,7 @@ namespace SqlAlias
             }
 
             return connectionString;
-#endif
+
         }
     }
 }
